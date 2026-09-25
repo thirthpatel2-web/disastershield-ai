@@ -9,6 +9,8 @@
 ![Groq](https://img.shields.io/badge/Groq-Llama%203.3%2070B-F55036)
 ![No backend](https://img.shields.io/badge/backend-none%20needed-2ea44f)
 
+[![Live demo](https://img.shields.io/badge/▶%20LIVE%20DEMO-open%20in%20browser-ff7eb6?style=for-the-badge)](https://thirthpatel2-web.github.io/disastershield-ai/)
+
 </div>
 
 ```
@@ -30,6 +32,8 @@ region inputs ──► weighted risk model ──► CRITICAL / HIGH / MEDIUM /
 | 🤖 **AI Chat** | A disaster analyst powered by Groq (`llama-3.3-70b-versatile`) |
 
 ## 🚀 Quick start
+
+**Just want to see it?** Open the [live demo](https://thirthpatel2-web.github.io/disastershield-ai/). Everything except the AI chat works there without any setup.
 
 ```bash
 git clone https://github.com/thirthpatel2-web/disastershield-ai.git
