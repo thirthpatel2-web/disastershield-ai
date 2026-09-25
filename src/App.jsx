@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react";
 //  🔑  PASTE YOUR GROQ API KEY HERE  (line 7 — only change needed)
 //  Get it FREE at: https://console.groq.com → API Keys → Create
 // ════════════════════════════════════════════════════════════════
-const GROQ_API_KEY = "YOUR_GROQ_API_KEY";
+const GROQ_API_KEY = "YOUR_GROQ_API_KEY_HERE";
 const GROQ_MODEL   = "llama-3.3-70b-versatile"; // free & ultra-fast
 
 // ── Color tokens ─────────────────────────────────────────────────
