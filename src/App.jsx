@@ -566,8 +566,8 @@ export default function App() {
           </div>
           <div style={{marginLeft:"auto",display:"flex",alignItems:"center",gap:8}}>
             <div style={{display:"flex",alignItems:"center",gap:6,padding:"4px 10px",background:"#1a0a30",border:`1px solid ${C.purple}55`,borderRadius:20}}>
-              <div style={{width:7,height:7,borderRadius:"50%",background:keyMissing?C.danger:C.safe,boxShadow:`0 0 6px ${keyMissing?C.danger:C.safe}`}}/>
-              <span style={{fontSize:10,color:keyMissing?C.danger:C.purple,fontFamily:"monospace",fontWeight:700}}>{keyMissing?"GROQ KEY MISSING":"⚡ GROQ AI ONLINE"}</span>
+              <div style={{width:7,height:7,borderRadius:"50%",background:keyMissing?C.purple:C.safe,boxShadow:`0 0 6px ${keyMissing?C.purple:C.safe}`}}/>
+              <span style={{fontSize:10,color:C.purple,fontFamily:"monospace",fontWeight:700}}>{keyMissing?"DEMO MODE":"⚡ GROQ AI ONLINE"}</span>
             </div>
             <div style={{width:8,height:8,borderRadius:"50%",background:C.safe,boxShadow:`0 0 8px ${C.safe}`,animation:"pulse 2s infinite"}}/>
             <span style={{fontSize:10,color:C.safe,fontFamily:"monospace"}}>ONLINE</span>
@@ -580,14 +580,10 @@ export default function App() {
 
       {/* API key warning banner */}
       {keyMissing&&(
-        <div style={{background:"#1a0800",borderBottom:`1px solid ${C.warn}`,padding:"8px 20px",display:"flex",alignItems:"center",gap:10,fontSize:12,fontFamily:"monospace",flexWrap:"wrap"}}>
-          <span style={{color:C.warn,fontWeight:800}}>⚠ GROQ KEY MISSING</span>
-          <span style={{color:C.muted}}>All tabs work except AI Chat.</span>
-          <span style={{color:C.muted}}>Fix: open App.jsx → line 7 → replace</span>
-          <span style={{color:C.yellow,fontWeight:700}}>YOUR_GROQ_API_KEY_HERE</span>
-          <span style={{color:C.muted}}>with your key from</span>
-          <span style={{color:C.accent}}>console.groq.com</span>
-          <span style={{color:C.safe}}>(FREE)</span>
+        <div style={{background:"#0f0a24",borderBottom:`1px solid ${C.purple}55`,padding:"8px 20px",display:"flex",alignItems:"center",gap:10,fontSize:12,fontFamily:"monospace",flexWrap:"wrap"}}>
+          <span style={{color:C.purple,fontWeight:800}}>◆ PUBLIC DEMO</span>
+          <span style={{color:C.muted}}>All figures are simulated for demonstration.</span>
+          <span style={{color:C.muted}}>AI Chat runs when you add a free Groq key locally (see the README).</span>
         </div>
       )}
 
@@ -598,7 +594,7 @@ export default function App() {
         {tab==="dashboard"&&(
           <div style={{animation:"fadeIn 0.4s ease"}}>
             <div style={{fontSize:20,fontWeight:700,fontFamily:"'Orbitron', monospace",marginBottom:2}}>Operations Center</div>
-            <div style={{fontSize:12,color:C.muted,marginBottom:16}}>Real-time multi-hazard monitoring dashboard</div>
+            <div style={{fontSize:12,color:C.muted,marginBottom:16}}>Multi-hazard monitoring dashboard · simulated data</div>
             <div style={{display:"flex",gap:10,marginBottom:16,flexWrap:"wrap"}}>
               <StatCard label="Active Alerts"     value="3"      sub="↑1 from yesterday"  color={C.danger} icon="🔴"/>
               <StatCard label="Regions Monitored" value="4"      sub="All systems live"    color={C.accent} icon="🗺"/>
